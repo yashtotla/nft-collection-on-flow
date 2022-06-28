@@ -1,1 +1,1 @@
-# nft-collection-on-flow
+# NFT Collection on Flow
