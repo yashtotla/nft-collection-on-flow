@@ -5,7 +5,9 @@
 			"serviceAccount": "emulator-account"
 		}
 	},
-	"contracts": {},
+	"contracts": {
+		"BottomShot": "./contracts/BottomShot.cdc"
+	},
 	"networks": {
 		"emulator": "127.0.0.1:3569",
 		"mainnet": "access.mainnet.nodes.onflow.org:9000",
@@ -15,7 +17,17 @@
 		"emulator-account": {
 			"address": "f8d6e0586b0a20c7",
 			"key": "5d81a498f8c4ca8b58455c88c41f98c39b52d6191eac3fa20e3d7bf6cb5e2f2e"
+		},
+		"testnet-account": {
+			"address": "REPLACE_WITH_ACCOUNT_ADDRESS_FROM_WEBSITE",
+			"key": "REPLACE_WITH_PRIVATE_KEY_GENERATED_VIA_CLI"
 		}
 	},
-	"deployments": {}
+	"deployments": {
+		"testnet": {
+			"testnet-account": [
+				"BottomShot"
+			]
+		}
+	}
 }
